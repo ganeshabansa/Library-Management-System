@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tag -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Admin</title>
+
+    <!-- css -->
+    <style>
+      body {
+        background-image: url("../imgs/Library-Management-System.jpg");
+        /* background-attachment: scroll; */
+        background-size: cover;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/astyle.css" />
+
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body onload="loadSite()">
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img
+          class="img-fluid rounded"
+          height="20"
+          width="140"
+          src="../img/lab.jpg"
+          alt="image"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="nav ml-auto">
+            <a
+              class="btn font-weight-bold bg-success text-light ml-2"
+              href="home.html"
+              >Home<span class="sr-only">(current)</span></a
+            >
+            <a
+              class="btn font-weight-bold bg-success text-light ml-2"
+              href="book.php"
+              >Books</a
+            >
+            <a
+              class="btn font-weight-bold bg-success text-light ml-2"
+              href="login.html"
+              >Log-Out</a
+            >
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Buttons -->
+    <div class="container p-5 mt-5 text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <a class="btn btn-lg btn-block p-5 mt-4" href="issue.php"
+            ><i class="fa fa-book"></i> Issue Book</a
+          >
+          <a class="btn btn-lg btn-block p-5" href="register.html"
+            ><i class="fa fa-graduation-cap"></i> Register New Student</a
+          >
+        </div>
+        <div class="col-md-6">
+          <a class="btn btn-lg btn-block p-5 mt-4" href="return.php"
+            ><i class="fa fa-trash"></i> Return Book</a
+          >
+          <a class="btn btn-lg btn-block p-5" href="addbook.html"
+            ><i class="fa fa-plus"></i> Add New Book</a
+          >
+        </div>
+      </div>
+      <a class="btn btn-lg btn-block p-5 mt-2" href="studwork.php"
+        ><i class="fa fa-address-book"></i> Student Details
+      </a>
+    </div>
+
+    <!-- javaScripts libraries-->
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- pooper.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap.js -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function loadSite() {
+        let a = window.location.href;
+        if (
+          a !=
+            "http://localhost/dashboard/ganeshaprojects/LibraryManagement/admin/home.html" &&
+          a !=
+            "http://localhost/dashboard/ganeshaprojects/LibraryManagement/admin/"
+        ) {
+          window.location.href =
+            "http://localhost/dashboard/ganeshaprojects/LibraryManagement/admin/home.html";
+        }
+      }
+    </script>
+  </body>
+</html>
+<!-- created by:- on 21-10-20 -->
